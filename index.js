@@ -16,10 +16,7 @@ app.set('views', 'views')
 
 async function start() {
     try {
-        await mongoose.connect('', {
-            useNewURLParser: true,
-            useFindAndModify: false
-        })
+        await mongoose.connect('mongodb+srv://Sanya:1q2w3e4r@cluster0.au9rh.mongodb.net/gymso_fitness')
         app.listen(PORT, () => {
             console.log('Server has been started...')
         })
