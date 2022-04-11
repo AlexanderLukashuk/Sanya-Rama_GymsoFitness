@@ -17,6 +17,10 @@ app.set('view engine', 'hbs')
 app.set('views', 'views')
 
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'fonts')))
+//app.use(express.static(path.join(__dirname, 'images')))
+//app.use(express.static("/images"));
+//app.use(express.static("/fonts"));
 
 app.use(gymRouter)
 

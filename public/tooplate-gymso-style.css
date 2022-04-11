@@ -5,19 +5,19 @@ Tooplate 2119 Gymso Fitness
 https://www.tooplate.com/view/2119-gymso-fitness
 
 */
-
+/*
   @font-face {
       font-family: 'Plain';
-      src: url('../fonts/Plain-Regular.woff2') format('woff2'),
-          url('../fonts/Plain-Regular.woff') format('woff');
+      src: url('fonts/Plain-Regular.woff2') format('woff2'),
+          url('http://localhost:3000/fonts/Plain-Regular.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
 
   @font-face {
       font-family: 'Plain';
-      src: url('../fonts/Plain-Light.woff2') format('woff2'),
-          url('../fonts/Plain-Light.woff') format('woff');
+      src: url('http://localhost:3000/fonts/Plain-Light.woff2') format('woff2'),
+          url('http://localhost:3000/fonts/Plain-Light.woff') format('woff');
       font-weight: 300;
       font-style: normal;
   }
@@ -29,7 +29,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
       font-weight: bold;
       font-style: normal;
   }
-
+*/
   :root {
     --primary-color:        #f13a11;
     --white-color:          #ffffff;
@@ -363,7 +363,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .hero {
-    background-image: url('../images/hero-bg.jpg');
+    background-image: url('http://localhost:3000/images/hero-bg.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
