@@ -7,4 +7,10 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/about', (req, res) => {
+    res.render('aboutUs', {
+        title: 'About Us'
+    })
+})
+
 module.exports = router

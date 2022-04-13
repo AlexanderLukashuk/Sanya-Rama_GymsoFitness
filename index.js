@@ -12,7 +12,11 @@ const hbs = exphbs.create({
     extname: 'hbs'
 })
 
-app.engine('hbs', hbs.engine)
+//app.engine('hbs', hbs.engine)
+app.engine('hbs', exphbs.engine({
+    defaultLayout: 'main',
+    extname: 'hbs'
+}))
 app.set('view engine', 'hbs')
 app.set('views', 'views')
 
