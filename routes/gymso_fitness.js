@@ -13,4 +13,22 @@ router.get('/about', (req, res) => {
     })
 })
 
+router.get('/classes', (req, res) => {
+    res.render('class', {
+        title: 'Classes'
+    })
+})
+
+router.get('/schedule', (req, res) => {
+    res.render('schedule', {
+        title: 'Schedule'
+    })
+})
+
+router.get('/contact', (req, res) => {
+    res.render('contact', {
+        title: 'Contacts'
+    })
+})
+
 module.exports = router
